@@ -26,11 +26,15 @@
         ////////////////////////////////////////////////////////////////////////
         // ALL YOUR CODE GOES BELOW HERE ///////////////////////////////////////
         
-        // example: 
+        createCannon("bottom", 450);
+        createCannon("top", 50);
+        createCannon("top", 200, 500);
         createCannon("top", 450);
+        createCannon("top", 700, 500);
+        createCannon("top", 850)
         
         
-        // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
+                 // ALL YOUR CODE GOES ABOVE HERE ///////////////////////////////////////
         ////////////////////////////////////////////////////////////////////////
     };
     cannon.init = init;
