@@ -21,10 +21,22 @@ var init = function (window) {
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM SETUP ////////////////////////////
         ////////////////////////////////////////////////////////////
-        
-        
+        // TODO 1: Declare our variables //
+        var circle;			// variable to hold a single circle when creating circles / iterating
+        var circles = [];	// variable to store all circles in one Array
 
+        // Code to draw a circle
+        circle = draw.randomCircleInArea(canvas, true, true, '#999', 2);
+        physikz.addRandomVelocity(circle, canvas);
+        view.addChild(circle);
+        circles.push(circle);
 
+        drawCircle();
+        drawCircle(); 
+        drawCircle(); 
+        drawCircle();             
+        drawCircle(); 
+        
         ////////////////////////////////////////////////////////////
         ///////////////// PROGRAM LOGIC ////////////////////////////
         ////////////////////////////////////////////////////////////
@@ -35,9 +47,14 @@ var init = function (window) {
         and check to see if it has drifted off the screen.         
         */
         function update() {
-            
-           
-            
+       // TODO 4 : Update the circle's position //
+
+	    physikz.updatePosition(0);
+	    physikz.updatePosition(0);
+	    physikz.updatePosition(0);
+	    physikz.updatePosition(0);
+        physikz.updatePosition(0);
+        
         }
     
         /* 
